@@ -1,0 +1,47 @@
+*,
+*:before,
+*::after {
+  scroll-behavior: smooth;
+    // outline: 1px solid black;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  font-family: var(--primary-fonts);
+  color: var(--primary-text-color);
+  letter-spacing: var(--primary-letter-spacing);
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  margin: 0;
+  padding: 0;
+
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
