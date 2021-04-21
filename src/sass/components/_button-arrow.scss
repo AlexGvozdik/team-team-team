@@ -1,0 +1,85 @@
+.button-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  border-radius: 22px;
+  background-color: var(--secondary-background-color);
+
+  border: none;
+
+  height: 44px;
+  min-width: 160px;
+
+
+  &--red {
+    background-color: var(--icon-unique-color);
+  }
+}
+
+.button-arrow {
+  &__label {
+    color: var(--accent-link-color);
+    @include font(16px, 700, 21px);
+    font-family: inherit;
+    margin-right: 15px;
+
+    &--red {
+      color: var(--secondary-background-color);
+    }
+  }
+}
+
+.button-arrow {
+  &__div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 10px;
+    height: 11px;
+    fill: var(--icon-basic-color);
+
+    &--red {
+      fill: var(--secondary-text-color);
+    }
+  }
+}
+
+@media screen and (min-width:768px) {
+  .button-arrow {
+      min-width: 175px;
+    &--red {
+      min-width: 192px;
+    }
+  }
+  
+}
+
+@media screen and (min-width:1200px) {
+  .button-arrow {
+    min-width: 180px;
+
+    &--red {
+      min-width: 198px;
+    }
+  }
+
+  .button-arrow {
+    &:hover,
+    &:focus {
+      background-color: var(--accent-greyer-color);
+    }
+  }
+
+  .button-arrow--red {
+    &:hover,
+    &:focus {
+      background-color: var(--accent-redder-color);
+    }
+  }
+}
