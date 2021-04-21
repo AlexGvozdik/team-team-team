@@ -9,32 +9,25 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 
-
 /* ===========BASE============================ */
 @import './base/normalize';
 @import './base/container';
 @import './base/common';
 
-
 /* ===========COMPONENTS============================ */
 @import './components/subtitle';
 @import './components/title';
 @import './components/item';
-@import './components/_grid';
-
-
-
-
-
-
+@import './components/grid';
+@import './components/button-arrow';
 
 /* ===========LAYOUT============================ */
-@import "./layout/header";
-@import "./layout/hero";
-@import "./layout/product";
-@import "./layout/made";
-@import "./layout/advantages";
-@import "./layout/gallery";
-@import "./layout/reviews";
-@import "./layout/location";
-@import "./layout/footer";
+@import './layout/header';
+@import './layout/hero';
+@import './layout/product';
+@import './layout/made';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/reviews';
+@import './layout/location';
+@import './layout/footer';
