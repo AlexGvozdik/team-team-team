@@ -1,20 +1,27 @@
-footer {
-  background-color: var(--primary-background-color);
-}
 .footer-up {
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
   }
   &__texts {
+    max-width: 221px;
     margin-bottom: 43px;
+
     @media screen and (min-width: 768px) {
+      max-width: 340px;
       margin-bottom: 91px;
-      margin-right: 92px;
     }
     @media screen and (min-width: 1200px) {
+      max-width: 477px;
       margin-bottom: 97px;
-      margin-bottom: 257px;
+    }
+  }
+
+  &__contacts {
+    @media screen and (max-width: 1199px) {
+      position: relative;
+      top: -7px;
+      right: 0;
     }
   }
   &__sub {
@@ -23,9 +30,10 @@ footer {
     text-transform: uppercase;
     color: var(--subtitle-color);
     max-width: 232px;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
+    text-align: start;
     @media screen and (min-width: 768px) {
-      margin-bottom: 16px;
+      text-align: start;
       max-width: 340px;
       @include font(26px, 400, 30px);
       letter-spacing: 0.04em;
@@ -114,7 +122,7 @@ footer {
 }
 
 .footer-border {
-  border: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .footer-down {
