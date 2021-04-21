@@ -1,0 +1,21 @@
+.title {
+  @include font(34px, 500, 39px);
+  font-family: var(--secondary-fonts);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    @include font(48px, 500, 55px);
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    @include font(58px, 500, 66px, 0.06em);
+  }
+
+}
