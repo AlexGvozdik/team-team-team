@@ -9,22 +9,22 @@ const Back2 = document.getElementById("Back2");
 
 const progress = document.getElementById("progress");
 Next1.onclick = function () {
-    Form1.style.left = "-450px";
-    Form2.style.left = "40px";
-    progress.style.width = "240px";
+    Form1.style.left = "-400px";
+    Form2.style.left = "10px";
+    progress.style.width = "200px";
 }
 Back1.onclick = function () {
-    Form1.style.left = "40px";
-    Form2.style.left = "450px";
-    progress.style.width = "120px";
+    Form1.style.left = "10px";
+    Form2.style.left = "400px";
+    progress.style.width = "100px";
 }
 Next2.onclick = function () {
-    Form2.style.left = "-450px";
-    Form3.style.left = "40px";
+    Form2.style.left = "-400px";
+    Form3.style.left = "10px";
     progress.style.width = "360px";
 }
 Back2.onclick = function () {
-    Form2.style.left = "40px";
-    Form3.style.left = "450px";
-    progress.style.width = "240px";
+    Form2.style.left = "10px";
+    Form3.style.left = "400px";
+    progress.style.width = "200px";
 }

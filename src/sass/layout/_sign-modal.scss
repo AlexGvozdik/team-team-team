@@ -1,6 +1,9 @@
 .sign-modal {
     overflow: hidden;
     position: relative;
+    max-width: 320px;
+    height: 95%;
+    max-height: 400px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -15,22 +18,7 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
-    @media screen and (max-width: 1199px) {
-        width: 100%;
-        max-width: 450px;
-        height: 95%;
-        max-height: 609px;
-        overflow: scroll;
-    }
-
-    @media screen and (min-width: 1200px) {
-        max-width: 360px;
-        height: 95%;
-        max-height: 400px;
-    }
-
 }
-
 .sign-modal {
     &__title {
         text-align: center;
@@ -42,7 +30,7 @@
         position: absolute;
         width: 280px;
         top: 100px;
-        left: 40px;
+        left: 5px;
         transition: 0.5s;
     }
 }
@@ -84,11 +72,11 @@
 }
 
 #Form2 {
-    left: 450px;
+    left: 400px;
 }
 
 #Form3 {
-    left: 450px;
+    left: 400px;
 }
 
 .sign-modal {
@@ -105,20 +93,24 @@
     }
 
     &__step-col {
-        width: 120px;
+        width: 100px;
         text-align: center;
         color:white;
         position: relative;
+
+        &:nth-child(2) {
+            width: 120px;
+
+        }
     }
 }
 
 #progress {
     position: absolute;
     height: 100%;
-    width: 120px;
+    width: 100px;
     background: linear-gradient(to right, #ffb8ca, #d41443);
     transition: 1s;
-    // overflow: hidden;
 
     &::after {
         content:'';
@@ -140,9 +132,11 @@
         background: transparent;
         border-radius: 50%;
         top: -50px;
-        right: -20px;
+        right: -15px;
         
         z-index: 10;
+
+
     }
 
     &__cross {
@@ -150,5 +144,12 @@
         height: 20px;
         fill: var(--accent-link-color);
     }
-
 }
+
+// @media screen and (max-width: 359px) {
+//     .sign {
+//         &-modal {
+//         width: 95vw;
+//         overflow-y: scroll;
+//         }
+// }

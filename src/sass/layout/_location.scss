@@ -9,7 +9,7 @@
   &__item {
     overflow: hidden;
     position: relative;
-    max-width: 220px;
+    max-width: 480px;
     padding-top: 43px;
     padding-bottom: 25px;
     padding-left: 20px;
@@ -61,8 +61,7 @@
   }
 
   &__info {
-    position: relative;
-    width: 188px;
+    width: 100%;
     @include font(12px, 500, 18px);
     color: var(--footer-unicode-color);
   }
@@ -98,6 +97,7 @@
     margin-right: auto;
   }
 }
+
 
 @media screen and (max-width:767px) {
 
@@ -149,6 +149,7 @@
     }
 
     &__info {
+      position: relative;
       width: 158px;
       @include font(14px, 500, 23px);
     }

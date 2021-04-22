@@ -5,7 +5,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
+        width: 95%;
+        max-height: 550px;
         background: #fff;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -33,12 +34,10 @@
   }
 
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width:450px) and (max-width: 1199px) {
     .map {
         &__modal {
-            width: 100%;
             max-width: 450px;
-            height: 95%;
             max-height: 550px;
             overflow: scroll;
         }
@@ -51,8 +50,7 @@
     .map {
       &__modal {
         max-width: 700px;
-        height: 95%;
-        max-height: 550px;
+        height: 100%;
       }
     }
   
