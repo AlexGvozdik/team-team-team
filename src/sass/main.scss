@@ -20,6 +20,13 @@
 @import './components/item';
 @import './components/grid';
 @import './components/button-arrow';
+@import './components/backdrop';
+@import './components/scroll';
+@import './components/preloader';
+@import './components/popap';
+
+
+
 
 /* ===========LAYOUT============================ */
 @import './layout/header';
@@ -31,3 +38,8 @@
 @import './layout/reviews';
 @import './layout/location';
 @import './layout/footer';
+@import './layout/sign-modal';
+@import './layout/map-modal';
+
+
+

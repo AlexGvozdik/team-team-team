@@ -1,0 +1,107 @@
+.popap {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 999;
+
+    &__content {
+        position: relative;
+        width: 600px;
+        height: 400px;
+        background: rgb(240, 136, 205);
+        border-radius: 20px;
+        display: flex;
+        box-shadow:  0 5px 15px rgba(0,0,0, 0.1);
+        overflow: hidden;
+    }
+
+    &__thumb-picture {
+        position: relative;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:transparent;
+    }
+}
+
+.popap {
+    &__picture {
+        position: relative;
+        max-width: 250px;
+        z-index: 1;
+    }
+
+    &__thumb-picture::before {
+        content:'';
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        border-radius: 50%;
+    }
+}
+
+.popap {
+    &__info {
+        position: relative;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title-small {
+        @include font(34px, 900, 40px, 0.01em);
+        margin: 0 auto;
+        color:whitesmoke;
+    }
+}
+
+.popap {
+    &__title-big {
+        @include font(50px, 900, 70px, 0.01em);
+        margin: 0 auto;
+        color: var(--primary-text-color);
+    }
+
+    &__text-rules {
+        text-align: left;
+        @include font(20px, 700, 40px);
+        padding-left: 55px;
+        color:rgb(233, 223, 223);
+    }
+}
+
+.popap {
+    &__link {
+        @include font(34px, 700, 40px);
+        color: red;
+        margin: auto;
+        margin-top: 40px;
+        background-color:white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    &__close-btn {
+        position: absolute;
+        border:none;
+        background: transparent;
+        border-radius: 50%;
+        top: 5px;
+        right: 10px;
+    }
+}
+
+.popap {
+    &__icon-cross {
+        fill: var(--primary-text-color);
+    }
+}
