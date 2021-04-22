@@ -133,11 +133,12 @@
 }
 
 .made__picture:hover {
-  transform: rotate(360deg);
+  transform: rotate(-360deg);
 }
 
 .made__right-side {
-  width: 220px;
+  width: 100%;
+  padding: 0 10px;
   margin: auto;
 
   @media screen and (min-width: 768px) {
