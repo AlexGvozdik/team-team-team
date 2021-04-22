@@ -139,7 +139,9 @@
 .made__right-side {
   width: 100%;
   padding: 0 10px;
+
   margin: auto;
+  padding: 0 auto;
 
   @media screen and (min-width: 768px) {
     width: 340px;

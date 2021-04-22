@@ -7,9 +7,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
     rel="stylesheet">
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="./iceCream-favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./iceCream-favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./iceCream-favicon/favicon-16x16.png">
+    <link rel="manifest" href="./iceCream-favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#e6c4ec">
+    <meta name="theme-color" content="#e6c4ec">
   </head>
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+    <include src="./partials/progress-bar.html"></include>
+    <include src="./partials/preloader.html"></include>
+    <include src="./partials/popap.html"></include>
     <include src="./partials/header.html"></include>
     <include src="./partials/hero.html"></include>
     <include src="./partials/product.html"></include>
@@ -19,8 +30,22 @@
     <include src="./partials/reviews.html"></include>
     <include src="./partials/location.html"></include>
     <include src="./partials/footer.html"></include>
-
+    <include src="./partials/scroll.html"></include>
+    
+    
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/jquery.iMissYou.min.js"></script>
+    <script src="./js/settings-miss-you.js"></script>
+    
+    <script src="./js/progress-bar.js" type="module"></script>
+    <script src="./js/preloader.js" type="module"></script>
+    <script src="./js/popap.js" type="module"></script>
     <script src="./index.js"></script>
+    <script src="./js/scroll.js" type="module"></script>
+    <script src="./js/modal-franchise.js" type="module"></script>
+    <script src="./js/modal-franchise-sign.js" type="module"></script>
+    <script src="./js/modal-map.js" type="module"></script>
+    
   </body>
 </html>
