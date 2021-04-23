@@ -1,0 +1,207 @@
+/*==============HOW IT'S MADE==============*/
+.made {
+  padding-top: 125px;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    background-image: url(../images/made/milk-mob.png);
+    background-repeat: no-repeat;
+    background-position: left 0 bottom 61px;
+    background-size: contain;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 130px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .made {
+    background-image: url(../images/made/milk-mob@2x.png);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .made {
+    background-image: url(../images/made/browser-milk.png);
+    background-repeat: no-repeat;
+    background-position: left 0 top 415px;
+    background-size: contain;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .made {
+    background-image: url(../images/made/browser-milk@2x.png);
+  }
+}
+
+.made__titles {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+
+.made__subtitle {
+  font-family: var(--secondary-fonts);
+  @include font(18px, 400, 21px);
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--subtitle-color);
+
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    @include font(26px, 400, 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(30px, 400, 34px);
+    letter-spacing: var(--primary-letter-spacing);
+  }
+}
+
+.made__title {
+  font-family: var(--secondary-fonts);
+  @include font(34px, 400, 39px);
+  text-align: center;
+  letter-spacing: var(--primary-letter-spacing);
+
+  text-transform: uppercase;
+
+  color: var(--accent-link-color);
+
+  margin-bottom: 26px;
+
+  @media screen and (min-width: 768px) {
+    @include font(48px, 400, 55px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(58px, 400, 66px);
+    letter-spacing: var(--secondary-letter-spacing);
+  }
+}
+
+.made__main .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.made__main {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.made__picture {
+  display: block;
+  margin-bottom: 46px;
+  min-width: 280px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 340px;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 516px;
+    margin-bottom: 0;
+  }
+}
+
+.made__picture {
+  animation-name: animate__rotateIn;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  transform: rotate(0deg);
+
+  transition: transform 2000ms;
+}
+
+.made__picture:hover {
+  transform: rotate(-360deg);
+}
+
+.made__right-side {
+  width: 100%;
+  padding: 0 10px;
+
+  margin: auto;
+  padding: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    padding-top: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 463px;
+    padding-top: 106px;
+  }
+}
+
+.made__text {
+  font-family: var(--primary-fonts);
+  font-style: normal;
+  @include font(12px, 500, 19px);
+  letter-spacing: normal;
+
+  color: var(--primary-text-color);
+
+  margin-bottom: 35px;
+
+  @media screen and (min-width: 768px) {
+    @include font(14px, 500, 25px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(16px, 500, 28px);
+    letter-spacing: var(--primary-letter-spacing);
+  }
+}
+
+.made__description {
+  font-family: var(--primary-fonts);
+  font-style: normal;
+  @include font(12px, 500, 19px);
+  letter-spacing: normal;
+
+  color: var(--footer-unicode-color);
+
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    @include font(14px, 500, 25px);
+    letter-spacing: var(--primary-letter-spacing);
+    margin-bottom: 62px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(14px, 500, 27px);
+  }
+}
+
+.button__mades {
+  width: 176px;
+  height: 44px;
+}
+
+.button__mades .button-arrow__label {
+  @media screen and (max-width: 767px) {
+    @include font(14px, 700, 18px);
+  }
+}
