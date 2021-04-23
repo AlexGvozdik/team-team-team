@@ -1,11 +1,9 @@
 .map {
     &__modal {
-        // overflow: hidden;
         position: relative;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        overflow: scroll;
         width: 95vw;
         max-height: 400px;
         background: #fff;
@@ -35,6 +33,7 @@
   }
 
 }
+
 @media screen and (min-width:450px) {
     .map {
         &__modal {
@@ -42,6 +41,14 @@
             max-height: 450px;
         }
     }
+}
+
+@media screen and (max-width:1199px) {
+  .map {
+    &__modal {
+      overflow: scroll;
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
