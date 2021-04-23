@@ -1,0 +1,323 @@
+.hero {
+  background-color: #ffb8ca;
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    position: relative;
+    height: 502px;
+  }
+
+  &__div-one {
+    margin-top: 193px;
+    z-index: 100;
+  }
+
+  &__title {
+    width: 218px;
+    margin-bottom: 19px;
+    font-family: var(--secondary-fonts);
+    @include font(26px, 400, 30px);
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__title--span {
+    color: #d41443;
+    @include font(48px, 400, 46px);
+  }
+
+  &__text {
+    display: none;
+  }
+
+  &__ellips {
+    position: absolute;
+    right: 0;
+    top: 83px;
+  }
+
+  &__ice-cream {
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+  }
+
+  &__ellips-tablet {
+    display: none;
+  }
+
+  &__milk {
+    display: none;
+  }
+
+  &__girl {
+    display: none;
+  }
+
+  &__group-one {
+    display: none;
+  }
+
+  &__group-two {
+    display: none;
+  }
+
+  &__arrow {
+    display: none;
+  }
+
+  &__text {
+    display: none;
+  }
+}
+
+.button-hero {
+  position: relative;
+  width: 62px;
+  height: 24px;
+  background-color: #d41443;
+  border: none;
+  border-radius: 20px;
+
+  @include font(8px, 400, 10px);
+  text-align: center;
+  color: #ffffff;
+
+  &__color {
+    width: 83px;
+    height: 24px;
+
+    margin-left: 8px;
+
+    background-color: #ffffff;
+    color: #d41443;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    &__container {
+      height: 399px;
+    }
+
+    &__div-one {
+      margin-top: 102px;
+    }
+
+    &__title {
+      width: 168px;
+      @include font(22px, 400, 25px);
+    }
+
+    &__title--span {
+      color: #d41443;
+      @include font(34px, 400, 30px);
+    }
+
+    &__text {
+      display: block;
+    }
+
+    &__ellips {
+      display: none;
+    }
+
+    &__ice-cream {
+      right: 247px;
+    }
+
+    &__ellips-tablet {
+      position: absolute;
+      display: block;
+      top: 31px;
+      right: 137px;
+    }
+
+    &__milk {
+      position: absolute;
+      display: block;
+      bottom: 28px;
+      left: 34px;
+    }
+
+    &__girl {
+      position: absolute;
+      display: block;
+      bottom: 0;
+      right: 34px;
+    }
+
+    &__group-one {
+      position: absolute;
+      display: block;
+      top: 94px;
+      right: 34px;
+    }
+
+    &__group-two {
+      position: absolute;
+      display: block;
+      top: 151px;
+      right: 34px;
+    }
+
+    &__arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 34px;
+      left: 154px;
+
+      border: none;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+
+      &--svg {
+        display: block;
+        margin: 0 auto;
+        width: 10px;
+        height: 10px;
+        fill: var(--icon-basic-color);
+      }
+    }
+
+    &__text {
+      position: absolute;
+      bottom: 59px;
+      left: 154px;
+      width: 130px;
+
+      @include font(8px, 400, 12px);
+
+      color: #ffffff;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    &__container {
+      height: 665px;
+    }
+
+    &__div-one {
+      margin-left: 69px;
+    }
+
+    &__title {
+      width: 277px;
+      @include font(38px, 400, 43px);
+    }
+
+    &__title--span {
+      color: #d41443;
+      @include font(58px, 400, 52px);
+    }
+
+    &__ice-cream {
+      right: 392px;
+    }
+
+    &__ellips-tablet {
+      top: 52px;
+      right: 209px;
+    }
+
+    &__milk {
+      bottom: 45px;
+      left: 31px;
+    }
+
+    &__girl {
+      bottom: 0;
+      right: 33px;
+    }
+
+    &__group-one {
+      top: 156px;
+      right: 18px;
+    }
+
+    &__group-two {
+      top: 248px;
+      right: 18px;
+    }
+
+    &__text {
+      width: 200px;
+      bottom: 102px;
+      left: 249px;
+
+      @include font(14px, 400, 20px);
+
+      z-index: 99;
+    }
+
+    &__arrow {
+      bottom: 58px;
+      left: 249px;
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  .button-hero {
+    @include font(14px, 400, 18px);
+
+    width: 102px;
+    height: 40px;
+
+    @include font(14px, 400, 18px);
+
+    &__color {
+      width: 138px;
+      height: 40px;
+    }
+  }
+
+  .button-hero {
+    &:hover,
+    &:focus {
+      background-color: var(--accent-redder-color);
+    }
+  }
+
+  .button-hero__color {
+    &:hover,
+    &:focus {
+      background-color: var(--accent-greyer-color);
+    }
+  }
+  .hero {
+    &__label {
+      position: relative;
+      z-index: 1;
+    }
+  }
+  .wave-btn--color {
+    background-color: #d41443;
+  }
+
+  .hero__wave-btn__wawes {
+    background-color: #ffb8ca;
+  }
+  .animate__rubberBand {
+    animation-duration: 4s;
+  }
+  .animate__fadeInUpBig {
+    animation-duration: 2s;
+  }
+  .animate__rubberBand {
+    animation-duration: 4s;
+  }
+  .animate__bounceInRight {
+    animation-duration: 3s;
+  }
+
+  .animate__bounceInDown {
+    animation-duration: 3s;
+  }
+}

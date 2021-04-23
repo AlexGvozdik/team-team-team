@@ -1,0 +1,249 @@
+.product {
+  padding-top: 121px;
+  padding-bottom: 98px;
+
+  &__main-subtitle {
+    margin-bottom: 15px;
+  }
+
+  &__main-title {
+    margin-bottom: 145px;
+  }
+
+}
+
+.product__item {
+  border-radius: 24px;
+  text-align: center;
+  max-width: 480px;
+  padding: 0 10px 41px;
+
+}
+
+
+.product__thumb {
+  position: relative;
+
+}
+
+.product__title {
+  font-family: var(--secondary-fonts);
+  @include font(20px, 500, 23px);
+  text-transform: uppercase;
+
+  color: var(--secondary-background-color);
+
+  padding-left: 53px;
+  padding-right: 53px;
+  padding-top: 160px;
+
+  margin-bottom: 30px;
+
+}
+
+.product__description {
+  @include font(14px, 700, 21px);
+  color: var(--secondary-background-color);
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+
+$colors: "var(--hero-background-color)",
+"#F0D1A5",
+"#C2E297";
+@include colorize($colors, ".product__item");
+
+.product__card {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.product__points {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--secondary-background-color);
+
+  margin-bottom: 30px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -4px;
+    right: -8px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--secondary-background-color);
+
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 0;
+    right: 8px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--secondary-background-color);
+  }
+
+}
+
+.button-long-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-color: transparent;
+}
+
+.button__icon {
+  fill: var(--icon-basic-color);
+  width: 100%;
+  position: relative;
+  top: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .product__item:not(:last-child) {
+    margin-bottom: 156px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .product__main-title {
+    margin-bottom: 149px;
+  }
+
+  .product__item {
+    max-width: 220px;
+  }
+
+  .product__description {
+    width: 198px;
+    height: 110px;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+
+  .product__title {
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 152px;
+
+    margin-bottom: 30px;
+  }
+
+  // .product__points {
+  //   margin-left: 98px;
+  //   margin-bottom: 30px;
+  // }
+
+  .product__card {
+    top: -103px;
+  }
+
+
+}
+
+@media screen and (max-width: 1199px) {
+  .back {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product__main-title {
+    margin-bottom: 258px;
+  }
+
+  .product__item {
+    max-width: 329px;
+    height: 525px;
+  }
+
+  .product__description {
+    @include font(16px, 700, 28px);
+    width: 241px;
+    height: 106px;
+    margin-bottom: 62px;
+  }
+
+  .product__title {
+    padding-top: 162px;
+    margin-bottom: 32px;
+  }
+
+  // .product__points {
+  //   margin-left: 151px;
+  //   margin-bottom: 32px;
+  // }
+
+  .product__card {
+    top: -200px;
+  }
+
+  .product__item {
+    position: relative;
+    perspective: 1000px;
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 250ms linear;
+    backface-visibility: hidden;
+  }
+
+
+
+  .back {
+    background-color: #F0E68C;
+    border-radius: 24px;
+    text-align: center;
+    transform: rotateY(180deg);
+
+    font-family: var(--secondary-fonts);
+    @include font(20px, 500, 23px);
+    text-transform: uppercase;
+
+    color: var(--secondary-background-color);
+
+    padding-left: 53px;
+    padding-right: 53px;
+    padding-top: 160px;
+
+    margin-bottom: 30px;
+  }
+
+  .product__item:hover .front,
+  .product__item:focus .front {
+    transform: rotateY(180deg);
+  }
+
+  .product__item:hover,
+  .product__item:focus {
+    background-color: transparent;
+  }
+
+
+  .product__item:hover .back,
+  .product__item:focus .back {
+    transform: rotateY(360deg);
+  }
+}
