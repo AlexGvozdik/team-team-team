@@ -1,12 +1,13 @@
 .map {
     &__modal {
-        overflow: hidden;
+        // overflow: hidden;
         position: relative;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 95%;
-        max-height: 550px;
+        overflow: scroll;
+        width: 95vw;
+        max-height: 400px;
         background: #fff;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -17,14 +18,14 @@
 
 .map {
   &__close-btn {
-    position: absolute;
+    position:fixed;
     border: none;
     background: transparent;
     border-radius: 50%;
     top: 10px;
     right: 20px;
 
-    z-index: 100000000;
+    z-index: 10;
   }
 
   &__cross {
@@ -34,23 +35,20 @@
   }
 
 }
-@media screen and (min-width:450px) and (max-width: 1199px) {
+@media screen and (min-width:450px) {
     .map {
         &__modal {
             max-width: 450px;
-            max-height: 550px;
-            overflow: scroll;
+            max-height: 450px;
         }
     }
-
-
 }
 
 @media screen and (min-width: 1200px) {
     .map {
       &__modal {
         max-width: 700px;
-        height: 100%;
+        max-height: 550px;
       }
     }
   
