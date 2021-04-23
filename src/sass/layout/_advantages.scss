@@ -1,7 +1,8 @@
 .advantages{
     padding-top: 39px;
     padding-bottom: 97px;
-  
+
+
     &__list{
       
 
@@ -14,6 +15,9 @@
 .advantages__box--images:not(:last-child) {
   margin-bottom: 16px;
 }
+
+
+
 
 .advantages__number {
 font-family: var(--secondary-fonts);
