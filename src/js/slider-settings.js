@@ -1,6 +1,6 @@
  $('.reviews__list').slick({
       dots: true,
-      arows: false,
+      arrows: false,
       autoplay: false,
       infinite: true,
       slidesToShow: 1,

@@ -115,8 +115,28 @@
 }
 
 .slick-next, 
-.slick-prev{
+.slick-prev,
+.slick-arrow {
   display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
+.slick-next:before,
+.slick-prev:before{
+  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0);
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
