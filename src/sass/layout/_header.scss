@@ -4,13 +4,12 @@
   z-index: 999;
   padding-top: 6px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding-top: 37px;
   }
 }
 
 .header {
-
   &__fixed {
     position: fixed;
     top: 0;
@@ -21,7 +20,7 @@
     animation-name: show_header;
     animation-duration: 1s;
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
       padding-bottom: 20px;
     }
   }
@@ -30,11 +29,11 @@
 @keyframes show_header {
   0% {
     opacity: 0;
-    top:-70px;
+    top: -70px;
   }
   100% {
     opacity: 1;
-    top:0px;
+    top: 0px;
   }
 }
 
@@ -55,13 +54,23 @@
   }
 }
 
+// .logo {
+//   animation-duration: 1000ms;
+// }
+
+// .animate__backInLeft {
+//   animation-duration: 1000ms;
+// }
+
 .header__order-btn {
   display: none;
 
   @media screen and(min-width: 768px) {
     display: block;
+    position: relative;
     min-width: 160px;
     transition: background-color 250ms linear;
+    animation-duration: 1000ms;
 
     &:hover,
     &:focus {
@@ -71,6 +80,8 @@
 }
 
 .order-btn__icon {
+  position: relative;
+  z-index: 1;
   fill: var(--accent-link-color);
   width: 10px;
   height: 13px;
@@ -149,10 +160,9 @@
     width: 254px;
   }
 
-    @media screen and(min-width: 1200px) {
-      display: none;
-    }
-
+  @media screen and(min-width: 1200px) {
+    display: none;
+  }
 }
 
 .mobile-menu.is-open {
@@ -201,6 +211,8 @@
 }
 
 .order-btn__text {
+  position: relative;
+  z-index: 1;
   @include font(16px, 700, 20px);
   color: var(--accent-link-color);
   margin-right: 15px;
