@@ -220,11 +220,11 @@
   transition: all 500ms ease-in-out 0ms;
 }
 
-// .is-hidden {
-//   opacity: 0;
-//   visibility: hidden;
-//   pointer-events: none;
-// }
+.made .is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
 .modal-made {
   position: absolute;
@@ -263,24 +263,12 @@
     background: transparent;
     cursor: pointer;
     fill: var(--icon-basic-color);
-
-    animation-name: animate__fadeIn;
-    opacity: 0;
-
     &:hover,
     &:focus {
       background-color: var(--icon-basic-color);
       fill: var(--icon-bg-color);
       width: 40px;
       height: 40px;
-
-      animation-name: animate__fadeIn;
-      animation-duration: 500ms;
-      animation-timing-function: ease;
-      opacity: 1;
-      // transform: initial;
-
-      // transition: transform 500ms;
     }
   }
 }
