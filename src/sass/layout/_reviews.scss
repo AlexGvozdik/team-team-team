@@ -58,7 +58,7 @@
       width: 54px;
       height: 40px;
       top: 30px;
-      left: 55px;
+      left: 40px;
     }
 
     &__circle--icon:not(:last-child) {
@@ -114,6 +114,10 @@
   margin-right: 18px;
 }
 
+.slick-next, 
+.slick-prev{
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
   .reviews {
@@ -148,7 +152,7 @@
 
     &__quotes {
       top: 30px;
-      left: 56px;
+      left: 45px;
     }
   }
 }
