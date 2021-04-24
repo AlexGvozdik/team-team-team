@@ -43,10 +43,10 @@
                     <br>
                     Aliquam erat volutpat. Aenean accumsan.
                 </p>
-                <button type="button" class="button-arrow button__mades">
+                <button type="button" class="button-arrow button__mades fadeInclass" made-data-modal-open>
                     <span class="button-arrow__label">Read more</span>
                     <svg class="button-arrow__icon" width="4" height="8">
-                        <use href="./images/svg-icon/sprite.svg#icon-arrow"></use>
+                        <use  href="./images/svg-icon/sprite.svg#icon-arrow"></use>
                     </svg>
                 </button>
 
@@ -55,4 +55,26 @@
 
     </div>
 
+    <div class="backdrop-made is-hidden" made-data-modal>
+        <div class="modal-made">
+            <button type="button" class="modal-made__close-btn" made-data-modal-close>
+                <svg class="modal-made__close-svg" width="25" height="25">
+                    <use href="./images/svg-icon/made-close.svg#icon-made_close"></use>
+                </svg>
+            </button>
+            <h2 class="modal-made__title title">
+                    на 100% натурально
+            </h2>
+            <p class="modal-made__text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+        </div>
+    </div>
+
+    <script src="./js/modal-made.js"></script>
+
 </section>
+
