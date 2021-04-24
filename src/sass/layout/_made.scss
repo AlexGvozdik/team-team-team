@@ -205,3 +205,178 @@
     @include font(14px, 700, 18px);
   }
 }
+
+/*=============MODAL==============*/
+
+.backdrop-made {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  z-index: 1000;
+  background-color: rgba(180, 0, 0, 0.5);
+  transition: all 500ms ease-in-out 0ms;
+}
+
+// .is-hidden {
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+// }
+
+.modal-made {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  max-height: 520px;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  background: var(--primary-background-color);
+  background-image: url(../images/made/morozhenoe-risunok.png);
+  background-repeat: no-repeat;
+  background-position: left 50% bottom 0px;
+  background-size: 50%;
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: url(../images/made/morozhenoe-risunok@2x.webp);
+  }
+
+  box-shadow: inset 0px 0px 20px 0px rgba(238, 0, 0, 2);
+  border-radius: 15px;
+
+  &__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20%;
+    background: transparent;
+    cursor: pointer;
+    fill: var(--icon-basic-color);
+
+    animation-name: animate__fadeIn;
+    opacity: 0;
+
+    &:hover,
+    &:focus {
+      background-color: var(--icon-basic-color);
+      fill: var(--icon-bg-color);
+      width: 40px;
+      height: 40px;
+
+      animation-name: animate__fadeIn;
+      animation-duration: 500ms;
+      animation-timing-function: ease;
+      opacity: 1;
+      // transform: initial;
+
+      // transition: transform 500ms;
+    }
+  }
+}
+
+.fadeInclass:hover,
+.fadeInclass:focus {
+  animation: animate__fadeIn ease 2s;
+  -webkit-animation: animate__fadeIn ease 2s;
+  -moz-animation: animate__fadeIn ease 2s;
+  -o-animation: animate__fadeIn ease 2s;
+  -ms-animation: animate__fadeIn ease 2s;
+}
+
+@keyframes animate__fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes animate__fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animate__fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes animate__fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes animate__fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-made {
+    width: 100%;
+    height: 100%;
+    max-width: 520px;
+    max-height: 580px;
+  }
+}
+
+.modal-made__title {
+  font-family: var(--secondary-fonts);
+  @include font(22px, 400, 27px);
+  text-align: center;
+
+  text-transform: uppercase;
+
+  color: var(--accent-link-color);
+
+  margin-bottom: 15px;
+
+  text-align: center;
+  margin: 15% auto 50px;
+
+  @media screen and (min-width: 768px) {
+    @include font(24px, 400, 29px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(30px, 400, 35px);
+  }
+}
+
+.modal-made__text {
+  @include font(14px, 500, 25px);
+  letter-spacing: var(--primary-letter-spacing);
+  color: var(--primary-text-color);
+
+  @media screen and (min-width: 1200px) {
+    @include font(14px, 500, 27px);
+  }
+}
