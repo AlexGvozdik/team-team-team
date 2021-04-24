@@ -115,7 +115,15 @@
 }
 
 .slick-next, 
-.slick-prev{
+.slick-prev,
+.slick-arrow {
+  width: 1px;
+  height: 1px;
+  display: none;
+}
+
+.slick-next:before,
+.slick-prev:before{
   display: none;
 }
 
