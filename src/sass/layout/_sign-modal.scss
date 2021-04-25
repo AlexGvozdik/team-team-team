@@ -28,7 +28,7 @@
 
     &__form {
         position: absolute;
-        width: 280px;
+        width: 300px;
         top: 100px;
         left: 5px;
         transition: 0.5s;
@@ -132,7 +132,7 @@
         background: transparent;
         border-radius: 50%;
         top: -50px;
-        right: -15px;
+        right: -5px;
         
         z-index: 10;
 
@@ -145,11 +145,3 @@
         fill: var(--accent-link-color);
     }
 }
-
-// @media screen and (max-width: 359px) {
-//     .sign {
-//         &-modal {
-//         width: 95vw;
-//         overflow-y: scroll;
-//         }
-// }
