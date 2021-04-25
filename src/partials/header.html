@@ -30,13 +30,73 @@
             </svg>
         </button>
 
-        <button type="button" class="button-arrow header__order-btn wave-btn animate__backInLeft">
+        <button type="button" class="button-arrow header__order-btn wave-btn" header-data-modal-open>
             <span class="order-btn__text">Buy now</span>
             <span class="wave-btn__waves wave-btn__waves--greyer"></span>
             <svg class="order-btn__icon">
                 <use href="./images/svg-icon/sprite.svg#icon-arrow"></use>
             </svg>
         </button>
+
+        <div class="header-backdrop" header-data-modal>
+            <div class="modal-header">
+                <button type="button" class="modal-header__close-btn" header-data-modal-close>
+                    <svg class="modal-header__close-btn-icon">
+                        <use href="./images/svg-icon/sprite.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                <b class="modal-form-text">Make your icy dreams come true</b>
+                
+                <form action="#" class="modal-form">
+                
+                    <label for="user-name" class="modal-form-field">
+                        Nickname
+                        <span class="modal-form-input-wrapper">
+                            <input type="text" name="user-name" id="user-name" class="modal-form-input" minlength="3" required
+                                autocomplete="off">
+                            <!-- <svg class="modal-form-icon">
+                                <use href=""></use>
+                            </svg> -->
+                        </span>
+                    </label>
+                
+                    <label for="user-phone" class="modal-form-field">
+                        Cell. phone
+                        <span class="modal-form-input-wrapper">
+                            <input type="tel" name="user-phone" id="user-phone" class="modal-form-input" minlength="10" required
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="095-123-45-67" autocomplete="off">
+                            <!-- <svg class="modal-form-icon">
+                                <use href=""></use>
+                            </svg> -->
+                        </span>
+                
+                    </label>
+                
+                    <label for="user-email" class="modal-form-field">
+                        E-mail
+                        <span class="modal-form-input-wrapper">
+                            <input type="email" name="user-email" id="user-email" class="modal-form-input" required autocomplete="off">
+                            <!-- <svg class="modal-form-icon email-icon">
+                                <use href=""></use>
+                            </svg> -->
+                        </span>
+                    </label>
+                
+                    <label for="user-comment" class="modal-form-field">
+                        Your sweet dreams
+                        <span class="modal-form-input-wrapper">
+                            <textarea name="user-comment" id="user-comment" class="modal-form-comment"
+                                placeholder="for sophisticated clients :)"></textarea>
+                        </span>
+                    </label>
+                
+                    <button type="submit" class="modal-form-btn button-arrow wave-btn">
+                        <span class="order-btn__text">Send</span>
+                        <span class="wave-btn__waves wave-btn__waves--greyer"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
 
         <div class="mobile-menu" data-menu-burger>
             <button class="mobile-menu__close-btn" data-menu-close-burger>
