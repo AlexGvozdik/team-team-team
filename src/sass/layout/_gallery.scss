@@ -1,0 +1,145 @@
+.masonry {
+  background: linear-gradient(180deg, var(--primary-background-color) 0%, var(--primary-background-color) 45%, var(--secondary-background-color) 45%);
+}
+
+.masonry__list {
+ display: flex;
+ align-items: flex-start;
+ justify-content: center;
+margin: 0 auto;
+}
+
+.masonry__item:first-child,
+.masonry__thumb {
+    position: relative;
+}
+
+.masonry__item:first-child:hover,
+.masonry__thumb:hover {
+  z-index: 1;
+}
+
+.masonry__item:first-child,
+.masonry__item:last-child,
+.masonry__thumb {
+    transition: transform 500ms;
+}
+
+.masonry__item:first-child:hover, 
+.masonry__item:last-child:hover,
+.masonry__thumb:hover {
+    transform: scale(1.5);
+}
+
+.card {
+  perspective: 200px;
+  transform-style: preserve-3d;
+  display: flex;
+}
+
+.card__inner {
+  transition: transform 0.15s linear;
+}
+
+.masonry__thumb.card:nth-child(3)  {
+    perspective: 900px;
+}
+
+
+.masonry__img {
+    border-radius: 10px;
+}
+
+.masonry__item {
+    margin-left: 5px;
+}
+
+.masonry__thumb:not(:last-child) {
+     margin-bottom: 5px;
+}
+
+.cubik {
+    opacity: 0;
+}
+
+.masonry__item:nth-child(1) {
+    margin-top: 40px;
+}
+
+.masonry__item:nth-child(2) {
+    margin-top: 25px;
+}
+
+.masonry__item:nth-child(4) {
+    margin-top: 30px;
+}
+
+.masonry__item:nth-child(5) {
+    margin-top: 15px;
+}
+
+.masonry__item:nth-child(6) {
+    margin-top: 45px;
+}
+
+@media screen and (min-width: 480px) {
+    .masonry {
+      background: linear-gradient(180deg, var(--primary-background-color) 0%, var(--primary-background-color) 30%, var(--secondary-background-color) 30%);
+    }
+}
+
+@media screen and (min-width: 768px) {
+.masonry__img {
+  border-radius: 15px;
+}
+
+.masonry {
+  background: linear-gradient(180deg, var(--primary-background-color) 0%, var(--primary-background-color) 40%, var(--secondary-background-color) 40%);
+}
+
+  .masonry__item:nth-child(1) {
+    margin-top: 85px;
+  }
+
+  .masonry__item:nth-child(2) {
+    margin-top: 55px;
+  }
+
+  .masonry__item:nth-child(4) {
+    margin-top: 60px;
+  }
+
+  .masonry__item:nth-child(5) {
+    margin-top: 30px;
+  }
+
+  .masonry__item:nth-child(6) {
+    margin-top: 95px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+.masonry__img {
+  border-radius: 22px;
+}
+
+ .masonry__item:nth-child(1) {
+   margin-top: 140px;
+}
+
+.masonry__item:nth-child(2) {
+  margin-top: 85px;
+}
+
+.masonry__item:nth-child(4) {
+  margin-top: 100px;
+}
+
+.masonry__item:nth-child(5) {
+  margin-top: 40px;
+}
+
+.masonry__item:nth-child(6) {
+  margin-top: 150px;
+}
+}
