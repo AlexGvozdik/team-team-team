@@ -145,9 +145,9 @@
   top: 0;
   right: 0;
   width: 100vw;
-  max-width: 480px;
+  max-width: 767px;
   height: 100vh;
-  z-index: 9999;
+  z-index: 20;
   overflow: scroll;
   background-color: var(--mobile-menu-background-color);
   padding: 60px 20px 0;
@@ -156,8 +156,13 @@
   transition: transform 500ms ease-out;
 
   @media screen and(min-width: 768px) {
-    min-width: 254px;
+    width: 250px;
   }
+
+  @media screen and(min-width: 870px) {
+    min-width: 35vw;
+  }
+
   @media screen and(min-width: 1200px) {
     display: none;
   }
@@ -309,7 +314,6 @@
     background-color: rgba(225, 121, 146, 0.9);
   }
 }
-
 .modal-header__close-btn-icon {
   width: 15px;
   height: 12px;
