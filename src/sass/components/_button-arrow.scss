@@ -13,7 +13,6 @@
   height: 44px;
   min-width: 160px;
 
-
   &--red {
     background-color: var(--icon-unique-color);
   }
@@ -50,17 +49,16 @@
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .button-arrow {
-      min-width: 175px;
+    min-width: 175px;
     &--red {
       min-width: 192px;
     }
   }
-  
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .button-arrow {
     min-width: 180px;
 
