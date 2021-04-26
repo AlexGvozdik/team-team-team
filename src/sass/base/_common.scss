@@ -12,6 +12,10 @@ body {
   letter-spacing: var(--primary-letter-spacing);
 }
 
+.preload * {
+transition: none !important;
+}
+
 .list {
   margin: 0;
   padding: 0;
