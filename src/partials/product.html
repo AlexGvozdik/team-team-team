@@ -4,8 +4,8 @@
         <p class="product__main-subtitle subtitle">100% natural</p>
         <h2 class="product__main-title title">products</h2>
         <ul class="product__list grid list">
-            <li class="product__item item">
-                <div class="product__thumb front">
+            <li class="product__item item animate__zoomInDown" data-aos="backInDown">
+                <div class="product__thumb">
                     <picture>
                         <source srcset="./images/product/ice-cream-1200.webp 1x, ./images/product/ice-cream-1200@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
                         <source srcset="./images/product/ice-cream-1200.png 1x, ./images/product/ice-cream-1200@2x.png 2x" media="(min-width: 1200px)">
@@ -15,7 +15,7 @@
                         <source srcset="./images/product/ice-cream-320.png 1x, ./images/product/ice-cream-320@2x.png 2x" media="(min-width: 320px)">
                         <img src="./images/product/ice-cream-320.png" alt="Мороженое" class="product__card">
                     </picture>
-                    <h3 class="product__title">ice cream</h3>
+                    <h3 class="product__title animate__shakeY">ice cream</h3>
                     <span class="product__points"></span>
                     <p class="product__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua facilisis. </p>
                     <button class="button-long-arrow" type="button" data-modal-open-product>
@@ -34,12 +34,9 @@
                         </div>
                     </div>
                 </div>   
-                <div class="back">
-                    <p class="back__text">!!!Buy me!!!</p>
-                </div>
             </li>
-            <li class="product__item item">
-                <div class="product__thumb front">
+            <li class="product__item item animate__zoomInDown" data-aos="backInDown">
+                <div class="product__thumb">
                     <picture>
                         <source srcset="./images/product/ice-coffee-1200.webp 1x, ./images/product/ice-coffee-1200@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
                         <source srcset="./images/product/ice-coffee-1200.png 1x, ./images/product/ice-coffee-1200@2x.png 2x" media="(min-width: 1200px)">
@@ -49,7 +46,7 @@
                         <source srcset="./images/product/ice-coffee-320.png 1x, ./images/product/ice-coffee-320@2x.png 2x" media="(min-width: 320px)">
                         <img src="./images/product/ice-coffee-320.png" alt="Кофе со льдом" class="product__card">
                     </picture>
-                    <h3 class="product__title">ice coffee</h3>
+                    <h3 class="product__title animate__shakeY">ice coffee</h3>
                     <span class="product__points"></span>
                     <p class="product__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. </p>
                     <button class="button-long-arrow" type="button" data-modal-open-product-two>
@@ -68,12 +65,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="back">
-                    <p class="back__text">!!!Buy me!!!</p>
-                </div>
             </li>
-            <li class="product__item item">
-                <div class="product__thumb front">
+            <li class="product__item item animate__zoomInDown" data-aos="backInDown">
+                <div class="product__thumb">
                     <picture>     
                         <source srcset="./images/product/milkshakes-1200.webp 1x, ./images/product/milkshakes-1200@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
                         <source srcset="./images/product/milkshakes-1200.png 1x, ./images/product/milkshakes-1200@2x.png 2x" media="(min-width: 1200px)">
@@ -83,7 +77,7 @@
                         <source srcset="./images/product/milkshakes-320.png 1x, ./images/product/milkshakes-320@2x.png 2x" media="(min-width: 320px)">                
                         <img src="./images/product/milkshakes-320.png" alt="Молочные коктейль" class="product__card">
                     </picture>
-                    <h3 class="product__title">milkshakes</h3>
+                    <h3 class="product__title animate__shakeY">milkshakes</h3>
                         <span class="product__points"></span>
                     <p class="product__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. </p>
                     <button class="button-long-arrow" type="button" data-modal-open-product-three>
@@ -102,64 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="back">
-                    <p class="back__text">!!!Buy me!!!</p>
-                </div>
             </li> 
-        </ul>
-
-        <ul class="buttons list">
-            <li class="buttons__item">
-                <button class="button-long-arrow" type="button" data-modal-open-product-four>
-                    <svg class="button__icon" width="1px" height="15px">
-                        <use href="./images/svg-icon/sprite.svg#icon-long-arrow"></use>
-                    </svg>
-                </button>   
-                <div class="description is-hidden backdrop" data-modal-product-four>
-                    <div class="description-modal">
-                        <button class="description-modal__close-btn" type="button" data-modal-close-product-four>
-                            <svg class="description-modal__icon">
-                                <use href="./images/svg-icon/sprite.svg#icon-cross"></use>
-                            </svg>    
-                        </button>
-                        <p class="description-modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio harum, et quisquam neque impedit, libero molestiae quos eligendi obcaecati non optio voluptatibus. Velit pariatur esse expedita eaque ad facere culpa.</p>
-                    </div>
-                </div>
-            </li>
-            <li class="buttons__item">
-                <button class="button-long-arrow" type="button" data-modal-open-product-five>
-                    <svg class="button__icon" width="1px" height="15px">
-                        <use href="./images/svg-icon/sprite.svg#icon-long-arrow"></use>
-                    </svg>
-                </button>     
-                <div class="description is-hidden backdrop" data-modal-product-five>
-                    <div class="description-modal">
-                        <button class="description-modal__close-btn" type="button" data-modal-close-product-five>
-                            <svg class="description-modal__icon">
-                                <use href="./images/svg-icon/sprite.svg#icon-cross"></use>
-                            </svg>    
-                        </button>
-                        <p class="description-modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed corporis quasi, a voluptatem nisi quibusdam esse, sapiente culpa facilis blanditiis natus eos nesciunt tempora deserunt voluptate consequatur aliquid dignissimos nulla.</p>
-                    </div>
-                </div>
-            </li>
-            <li class="buttons__item">
-                <button class="button-long-arrow" type="button" data-modal-open-product-six>
-                    <svg class="button__icon" width="1px" height="15px">
-                        <use href="./images/svg-icon/sprite.svg#icon-long-arrow"></use>
-                    </svg>
-                </button>    
-                <div class="description is-hidden backdrop" data-modal-product-six>
-                    <div class="description-modal">
-                        <button class="description-modal__close-btn" type="button" data-modal-close-product-six>
-                            <svg class="description-modal__icon">
-                                <use href="./images/svg-icon/sprite.svg#icon-cross"></use>
-                            </svg>    
-                        </button>
-                        <p class="description-modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quasi quo expedita unde vel aliquid, suscipit possimus eos quae, cum et, dolorum molestiae rem obcaecati dolores. Sit voluptatibus reprehenderit odit.</p>
-                    </div>
-                </div>
-            </li>
         </ul>
     </div>
 </section>
