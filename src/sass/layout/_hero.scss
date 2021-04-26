@@ -1,5 +1,6 @@
 .hero {
   background-color: #ffb8ca;
+  overflow: hidden;
 
   &__container {
     display: flex;
@@ -72,6 +73,7 @@
 }
 
 .button-hero {
+  position: relative;
   width: 62px;
   height: 24px;
   background-color: #d41443;
@@ -202,6 +204,7 @@
     }
 
     &__div-one {
+      margin-top: 172px;
       margin-left: 69px;
     }
 
@@ -277,6 +280,7 @@
   }
 
   .button-hero {
+    cursor: pointer;
     &:hover,
     &:focus {
       background-color: var(--accent-redder-color);
@@ -288,5 +292,34 @@
     &:focus {
       background-color: var(--accent-greyer-color);
     }
+  }
+  .hero {
+    &__label {
+      position: relative;
+      z-index: 1;
+    }
+  }
+  .wave-btn--color {
+    background-color: #d41443;
+  }
+
+  .hero__wave-btn__wawes {
+    background-color: #ffb8ca;
+  }
+  .animate__rubberBand {
+    animation-duration: 4s;
+  }
+  .animate__fadeInUpBig {
+    animation-duration: 2s;
+  }
+  .animate__rubberBand {
+    animation-duration: 4s;
+  }
+  .animate__bounceInRight {
+    animation-duration: 3s;
+  }
+
+  .animate__bounceInDown {
+    animation-duration: 3s;
   }
 }

@@ -1,0 +1,215 @@
+.reviews  {
+  background-color:#fff;
+  padding-top: 80px;
+  padding-bottom: 85px;
+    
+    &__description {
+      position: relative;
+      background-color: #FAFAFA;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 45px 55px 25px 55px;
+      max-width: 460px;
+    }
+
+    &__photo {
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__underlay {
+      background: repeating-linear-gradient(
+      to bottom,
+        #FAFAFA,
+        #FAFAFA 26px,
+        #E1E1E1 26px,
+        #E1E1E1 28px);
+      background-size: 100% 29px; 
+    }
+
+    &__text,
+    &__name {
+      text-align: center;
+      font-family:var(--primary-fonts);
+      font-style: normal;
+      font-weight: 500;
+      color:var(--primary-text-color);
+    }
+
+    &__name {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-size: 14px;
+      line-height: 1.86;
+    }
+
+    &__text {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      font-size: 12px;
+      line-height: 2.55;
+    }
+
+    &__quotes {
+      position: absolute;
+      fill: #e1e1e1;
+      width: 54px;
+      height: 40px;
+      top: 30px;
+      left: 40px;
+    }
+
+    &__circle--icon:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &__circle--icon {
+      border-radius: 50%;
+      width: 4px;
+      height: 4px;
+      background: var(--icon-basic-color);
+    }
+
+    &__circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+
+  & li button:focus:before,
+  & li button:hover:before {
+    color:  unset;
+    opacity: 1;
+  }
+}
+  
+.slick-dots li button:before {
+  background-image: url(../images/reviews/vector-ellipse.png);
+   background-repeat: no-repeat;
+  background-size: 100%;
+  height: 14px;
+  width: 14px;
+  color:  #D9D9D9;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  background-image: url(../images/reviews/red_house.png) ;
+  opacity: 1;
+  color: unset;
+  width: 14px;
+  background-repeat: no-repeat;
+  background-size: 100%
+}
+
+.slick-dots li:not(:last-child) {
+  margin-right: 18px;
+}
+
+.slick-next, 
+.slick-prev,
+.slick-arrow {
+  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
+.slick-next:before,
+.slick-prev:before{
+  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    &__description {
+      padding: 45px 80px 35px 80px;
+      margin-left: auto;
+      margin-right: auto;
+      min-width: 620px ;
+    }
+
+    &__photo {
+      margin-bottom: 20px;
+    }
+
+    &__name {
+      margin-top: 15px;
+      margin-bottom: 35px;
+      font-size: 16px;
+      line-height: 1.86;
+    }
+
+    &__text {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      font-size: 14px;
+      line-height: 2.16;
+    }
+
+    &__quotes {
+      top: 30px;
+      left: 45px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .reviews {
+    padding-top: 125px;
+    padding-bottom: 130px;
+
+    &__description {
+      padding: 45px 90px 40px 90px;
+      max-width: 925px;
+    }
+
+    &__photo {
+      margin-bottom: 15px;
+    }
+   
+    &__name {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-size: 20px;
+      line-height: 1.86;
+    }
+
+    &__text {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.86;
+    }
+
+    &__quotes {
+    top: 29px;
+    left: 62px;
+    }
+  }
+}
