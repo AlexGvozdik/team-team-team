@@ -326,23 +326,23 @@ $colors: "var(--hero-background-color)",
   }
 
 
-  .description-modal {
-    width: 329px;
-    height: 525px;
-    top: 20%;
-    left: 40%;
-    animation: rotateY 3000ms infinite alternate backwards ease-in-out 1000ms;
-  }
+  // .description-modal {
+  //   width: 329px;
+  //   height: 525px;
+  //   top: 20%;
+  //   left: 40%;
+  //   animation: rotateY 3000ms infinite alternate backwards ease-in-out 1000ms;
+  // }
 
-  @keyframes rotateY {
-    0% {
-      transform: perspective(200px) rotateY(10deg);
-    }
+  // @keyframes rotateY {
+  //   0% {
+  //     transform: perspective(200px) rotateY(10deg);
+  //   }
 
-    100% {
-      transform: perspective(200px) rotateY(-10deg);
-    }
-  }
+  //   100% {
+  //     transform: perspective(200px) rotateY(-10deg);
+  //   }
+  // }
   
   .description-modal__close-btn {
     width: 30px;
