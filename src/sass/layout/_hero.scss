@@ -170,6 +170,9 @@
       bottom: 34px;
       left: 154px;
 
+      cursor: pointer;
+      z-index: 101;
+
       border: none;
       border-radius: 50%;
       width: 18px;
@@ -194,6 +197,31 @@
 
       color: #ffffff;
     }
+  }
+  .hero__arrow:hover,
+  .hero__arrow:focus {
+    background-color: #d41443;
+  }
+
+  .hero__arrow:hover .hero__arrow--svg,
+  .hero__arrow:focus .hero__arrow--svg {
+    fill: #ffffff;
+  }
+  .animate__rubberBand {
+    animation-duration: 4s;
+  }
+  .animate__fadeInUpBig {
+    animation-duration: 2s;
+  }
+  .animate__rubberBand {
+    animation-duration: 4s;
+  }
+  .animate__bounceInRight {
+    animation-duration: 3s;
+  }
+
+  .animate__bounceInDown {
+    animation-duration: 3s;
   }
 }
 
@@ -305,21 +333,5 @@
 
   .hero__wave-btn__wawes {
     background-color: #ffb8ca;
-  }
-  .animate__rubberBand {
-    animation-duration: 4s;
-  }
-  .animate__fadeInUpBig {
-    animation-duration: 2s;
-  }
-  .animate__rubberBand {
-    animation-duration: 4s;
-  }
-  .animate__bounceInRight {
-    animation-duration: 3s;
-  }
-
-  .animate__bounceInDown {
-    animation-duration: 3s;
   }
 }
