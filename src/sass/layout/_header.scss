@@ -128,18 +128,19 @@
   align-items: center;
   justify-content: center;
   z-index: 30;
-
   opacity: 1;
-  transition: opacity 1s linear 1s;
   background-color:transparent;
   border: none;
   padding: 0;
 
+
   &.is-open {
-      opacity: 0;
+      opacity: 1;
+                  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1) 1s;
+
   }
   &.is-hidden {
-  transition: opacity 500ms linear 5s;
+            transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1) 1s;
   }
   @media screen and(min-width: 768px) {
         top: 0;
@@ -501,11 +502,13 @@
   .burger-btn .burger-btn__cross {
     opacity: 0;
     display: none;
+
   }
 
   .burger-btn.is-open .burger-btn__cross {
     display: block;
     opacity: 1;
+
   }
 
   .burger-btn.is-open .burger-btn__burger {
