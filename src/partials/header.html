@@ -1,223 +1,258 @@
 <header class="header">
-    <div class="header-container container">
+<div class="header-container container">
+    <a href="/" class="logo animate__backInLeft">
+    <img src="./images/logo/logo.png" alt="Мороженное" />
+    </a>
 
-        <a href="/" class="logo animate__backInLeft">
-            <img src="./images/logo/logo.png" alt="Мороженное">
-        </a>
-
-        <nav class="navigation">
-            <ul class="nav-list list">
-                <li class="nav-list__item">
-                    <a href="" class="nav-list__link link">Home</a>
-                </li>
-                <li class="nav-list__item">
-                    <a href="#loc" class="nav-list__link link">About us</a>
-                </li>
-                <li class="nav-list__item">
-                    <a href="#how-made" class="nav-list__link link">How it’s made?</a>
-                </li>
-                <li class="nav-list__item">
-                    <a href="#product" class="nav-list__link link">Our products</a>
-                </li>
-                <li class="nav-list__item">
-                    <a href="#footer" class="nav-list__link link">Contact</a>
-                </li>
-            </ul>
-        </nav>
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<button type="button" class="burger-btn" data-menu-button-burger>
-<svg class="burger-btn__svg" width="20" height="20">
-        <use href="./images/svg-icon/sprite.svg#icon-menu" width="20" height="20" class="burger-btn__burger">
-        </use>
-        <use href="./images/svg-icon/sprite.svg#icon-cancel" width="20" height="20" class="burger-btn__cross">
-        </use>
+    <nav class="navigation">
+      <ul class="nav-list list">
+        <li class="nav-list__item">
+          <a href="" class="nav-list__link link">Home</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#loc" class="nav-list__link link">About us</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#how-made" class="nav-list__link link">How it’s made?</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#product" class="nav-list__link link">Our products</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#footer" class="nav-list__link link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="burger-btn" data-menu-button-burger>
+    <svg class="burger-btn__svg" width="50" height="50">
+        <use
+        href="./images/svg-icon/sprite.svg#icon-menu"
+          width="20"
+          height="20"
+          class="burger-btn__burger"
+        ></use>
+        <use
+          href="./images/svg-icon/sprite.svg#icon-cancel"
+          width="20"
+          height="20"
+          class="burger-btn__cross"
+        ></use>
       </svg>
+    </button>
+    <button class="burger-btn__overlap">
+      <svg class="burger__overlap-btn" width="20" height="20">
+        <use href="./images/svg-icon/sprite.svg#icon-menu" width="20" height="20"></use>
+      </svg>
+    </button>
+    <button type="button" class="button-arrow header__order-btn wave-btn" header-data-modal-open>
+      <span class="order-btn__text">Buy now</span>
+      <span class="wave-btn__waves wave-btn__waves--greyer"></span>
+      <svg class="order-btn__icon">
+        <use href="./images/svg-icon/sprite.svg#icon-arrow"></use>
+      </svg>
+    </button>
+
+    <div class="header-backdrop is-hidden" header-data-modal>
+      <div class="modal-header">
+        <button type="button" class="modal-header__close-btn" header-data-modal-close>
+          <svg class="modal-header__close-btn-icon">
+            <use href="./images/svg-icon/sprite.svg#icon-cross"></use>
+          </svg>
         </button>
+        <b class="modal-form-text">Make your icy dreams come true</b>
 
+        <form action="#" class="modal-form">
+          <label for="user-name" class="modal-form-field">
+            Nickname
+            <span class="modal-form-input-wrapper">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="modal-form-input"
+                minlength="3"
+                required
+                autocomplete="off"
+              />
+              <!-- <svg class="modal-form-icon">
+                                <use href=""></use>
+                            </svg> -->
+            </span>
+          </label>
 
+          <label for="user-phone" class="modal-form-field">
+            Cell. phone
+            <span class="modal-form-input-wrapper">
+              <input
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                class="modal-form-input"
+                minlength="10"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="095-123-45-67"
+                autocomplete="off"
+              />
+              <!-- <svg class="modal-form-icon">
+                                <use href=""></use>
+                            </svg> -->
+            </span>
+          </label>
 
+          <label for="user-email" class="modal-form-field">
+            E-mail
+            <span class="modal-form-input-wrapper">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="modal-form-input"
+                required
+                autocomplete="off"
+              />
+              <!-- <svg class="modal-form-icon email-icon">
+                                <use href=""></use>
+                            </svg> -->
+            </span>
+          </label>
 
+          <label for="user-comment" class="modal-form-field">
+            Your sweet dreams
+            <span class="modal-form-input-wrapper">
+              <textarea
+                name="user-comment"
+                id="user-comment"
+                class="modal-form-comment"
+                placeholder="for sophisticated clients :)"
+              ></textarea>
+            </span>
+          </label>
 
-        <button type="button" class="button-arrow header__order-btn wave-btn" header-data-modal-open>
-            <span class="order-btn__text">Buy now</span>
+          <button type="submit" class="modal-form-btn button-arrow wave-btn">
+            <span class="order-btn__text">Send</span>
             <span class="wave-btn__waves wave-btn__waves--greyer"></span>
-            <svg class="order-btn__icon">
-                <use href="./images/svg-icon/sprite.svg#icon-arrow"></use>
-            </svg>
-        </button>
-       
-        <div class="header-backdrop is-hidden" header-data-modal>
-            <div class="modal-header">
-                <button type="button" class="modal-header__close-btn" header-data-modal-close>
-                    <svg class="modal-header__close-btn-icon">
-                        <use href="./images/svg-icon/sprite.svg#icon-cross"></use>
-                    </svg>
-                </button>
-                <b class="modal-form-text">Make your icy dreams come true</b>
-                
-                <form action="#" class="modal-form">
-                
-                    <label for="user-name" class="modal-form-field">
-                        Nickname
-                        <span class="modal-form-input-wrapper">
-                            <input type="text" name="user-name" id="user-name" class="modal-form-input" minlength="3" required
-                                autocomplete="off">
-                            <!-- <svg class="modal-form-icon">
-                                <use href=""></use>
-                            </svg> -->
-                        </span>
-                    </label>
-                
-                    <label for="user-phone" class="modal-form-field">
-                        Cell. phone
-                        <span class="modal-form-input-wrapper">
-                            <input type="tel" name="user-phone" id="user-phone" class="modal-form-input" minlength="10" required
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="095-123-45-67" autocomplete="off">
-                            <!-- <svg class="modal-form-icon">
-                                <use href=""></use>
-                            </svg> -->
-                        </span>
-                
-                    </label>
-                
-                    <label for="user-email" class="modal-form-field">
-                        E-mail
-                        <span class="modal-form-input-wrapper">
-                            <input type="email" name="user-email" id="user-email" class="modal-form-input" required autocomplete="off">
-                            <!-- <svg class="modal-form-icon email-icon">
-                                <use href=""></use>
-                            </svg> -->
-                        </span>
-                    </label>
-                
-                    <label for="user-comment" class="modal-form-field">
-                        Your sweet dreams
-                        <span class="modal-form-input-wrapper">
-                            <textarea name="user-comment" id="user-comment" class="modal-form-comment"
-                                placeholder="for sophisticated clients :)"></textarea>
-                        </span>
-                    </label>
-                
-                    <button type="submit" class="modal-form-btn button-arrow wave-btn">
-                        <span class="order-btn__text">Send</span>
-                        <span class="wave-btn__waves wave-btn__waves--greyer"></span>
-                    </button>
-                </form>
-            </div>
-        </div>
-
-        <div class="mobile-menu " data-menu-burger>
-            <!-- <button close-action class="mobile-menu__close-btn" data-menu-close-burger>
-                <svg class="close-btn__icon">
-                    <use href="./images/svg-icon/sprite.svg#icon-close"></use>
-                </svg>
-            </button> -->
-            <button type="button" class="mobile-menu__order-btn button-arrow" header-data-modal-open-two>
-                <span class="order-btn__text">Buy now</span>
-                <svg class="order-btn__icon">
-                    <use href="./images/svg-icon/sprite.svg#icon-arrow"></use>
-                </svg>
-            </button>
-            <ul class="mobile-menu__nav-list list">
-                <li class="mobile-menu__item">
-                    <a href="" class="mobile-menu__link link active scrollto drop-menu__link">Home</a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a href="#loc" class="mobile-menu__link link scrollto drop-menu__link">About us</a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a href="#how-made" class="mobile-menu__link link scrollto drop-menu__link">How it's made</a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a href="#product" class="mobile-menu__link link scrollto drop-menu__link">Our products</a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a href="#footer" class="mobile-menu__link link scrollto drop-menu__link">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <div class="header-backdrop is-hidden"  header-data-modal-two>
-            <div class="modal-header">
-                <button type="button" class="modal-header__close-btn" header-data-modal-close-two>
-                    <svg class="modal-header__close-btn-icon">
-                        <use href="./images/svg-icon/sprite.svg#icon-cross"></use>
-                    </svg>
-                </button>
-                <b class="modal-form-text">Make your icy dreams come true</b>
-                
-                <form action="#" class="modal-form">
-                
-                    <label for="user-name" class="modal-form-field">
-                        Nickname
-                        <span class="modal-form-input-wrapper">
-                            <input type="text" name="user-name" id="user-name" class="modal-form-input" minlength="3" required
-                                autocomplete="off">
-                            <!-- <svg class="modal-form-icon">
-                                <use href=""></use>
-                            </svg> -->
-                        </span>
-                    </label>
-                
-                    <label for="user-phone" class="modal-form-field">
-                        Cell. phone
-                        <span class="modal-form-input-wrapper">
-                            <input type="tel" name="user-phone" id="user-phone" class="modal-form-input" minlength="10" required
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="095-123-45-67" autocomplete="off">
-                            <!-- <svg class="modal-form-icon">
-                                <use href=""></use>
-                            </svg> -->
-                        </span>
-                
-                    </label>
-                
-                    <label for="user-email" class="modal-form-field">
-                        E-mail
-                        <span class="modal-form-input-wrapper">
-                            <input type="email" name="user-email" id="user-email" class="modal-form-input" required autocomplete="off">
-                            <!-- <svg class="modal-form-icon email-icon">
-                                <use href=""></use>
-                            </svg> -->
-                        </span>
-                    </label>
-                
-                    <label for="user-comment" class="modal-form-field">
-                        Your sweet dreams
-                        <span class="modal-form-input-wrapper">
-                            <textarea name="user-comment" id="user-comment" class="modal-form-comment"
-                                placeholder="for sophisticated clients :)"></textarea>
-                        </span>
-                    </label>
-                
-                    <button type="submit" class="modal-form-btn button-arrow wave-btn">
-                        <span class="order-btn__text">Send</span>
-                        <span class="wave-btn__waves wave-btn__waves--greyer"></span>
-                    </button>
-                </form>
-            </div>
-            </div>
+          </button>
+        </form>
+      </div>
     </div>
+    <div class="mobile-menu" data-menu-burger>
+      <button close-action class="mobile-menu__close-btn" data-menu-close-burger>
+        <svg class="close-btn__icon">
+          <use href="./images/svg-icon/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <button type="button" class="mobile-menu__order-btn button-arrow" header-data-modal-open-two>
+        <span class="order-btn__text">Buy now</span>
+        <svg class="order-btn__icon">
+          <use href="./images/svg-icon/sprite.svg#icon-arrow"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__nav-list list">
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link link active scrollto drop-menu__link">Home</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#loc" class="mobile-menu__link link scrollto drop-menu__link">About us</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#how-made" class="mobile-menu__link link scrollto drop-menu__link"
+            >How it's made</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#product" class="mobile-menu__link link scrollto drop-menu__link"
+            >Our products</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#footer" class="mobile-menu__link link scrollto drop-menu__link">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header-backdrop is-hidden" header-data-modal-two>
+      <div class="modal-header">
+        <button type="button" class="modal-header__close-btn" header-data-modal-close-two>
+          <svg class="modal-header__close-btn-icon">
+            <use href="./images/svg-icon/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <b class="modal-form-text">Make your icy dreams come true</b>
 
+        <form action="#" class="modal-form">
+          <label for="user-name" class="modal-form-field">
+            Nickname
+            <span class="modal-form-input-wrapper">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="modal-form-input"
+                minlength="3"
+                required
+                autocomplete="off"
+              />
+              <!-- <svg class="modal-form-icon">
+                                <use href=""></use>
+                            </svg> -->
+            </span>
+          </label>
+
+          <label for="user-phone" class="modal-form-field">
+            Cell. phone
+            <span class="modal-form-input-wrapper">
+              <input
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                class="modal-form-input"
+                minlength="10"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="095-123-45-67"
+                autocomplete="off"
+              />
+              <!-- <svg class="modal-form-icon">
+                                <use href=""></use>
+                            </svg> -->
+            </span>
+          </label>
+
+          <label for="user-email" class="modal-form-field">
+            E-mail
+            <span class="modal-form-input-wrapper">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="modal-form-input"
+                required
+                autocomplete="off"
+              />
+              <!-- <svg class="modal-form-icon email-icon">
+                                <use href=""></use>
+                            </svg> -->
+            </span>
+          </label>
+
+          <label for="user-comment" class="modal-form-field">
+            Your sweet dreams
+            <span class="modal-form-input-wrapper">
+              <textarea
+                name="user-comment"
+                id="user-comment"
+                class="modal-form-comment"
+                placeholder="for sophisticated clients :)"
+              ></textarea>
+            </span>
+          </label>
+
+          <button type="submit" class="modal-form-btn button-arrow wave-btn">
+            <span class="order-btn__text">Send</span>
+            <span class="wave-btn__waves wave-btn__waves--greyer"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
 </header>

@@ -14,13 +14,17 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding-top: 12px;
     padding-bottom: 6px;
     background-color: var(--hero-background-color);
     animation-name: show_header;
     animation-duration: 1s;
 
     @media screen and (min-width: 768px) {
+      position: absolute;
+    }
+
+    @media screen and (min-width: 1200px) {
+      position: fixed;
       padding-bottom: 20px;
     }
   }
@@ -54,14 +58,6 @@
   }
 }
 
-// .logo {
-//   animation-duration: 1000ms;
-// }
-
-// .animate__backInLeft {
-//   animation-duration: 1000ms;
-// }
-
 .header__order-btn {
   display: none;
 
@@ -79,7 +75,7 @@
     }
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 50px;
   }
 }
@@ -122,6 +118,46 @@
   }
 }
 
+.burger-btn__overlap {
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  fill: var(--accent-link-color);
+
+  @media screen and(min-width: 768px) {
+    top: 52px;
+    left: 520px;
+  }
+
+  @media screen and(min-width: 825px) {
+    left: 560px;
+  }
+  @media screen and(min-width: 890px) {
+    left: 580px;
+  }
+  @media screen and(min-width: 940px) {
+    left: 610px;
+  }
+  @media screen and(min-width: 975px) {
+    left: 650px;
+  }
+
+  @media screen and(min-width: 1050px) {
+    left: 700px;
+  }
+
+  @media screen and(min-width: 1160px) {
+    left: 730px;
+  }
+  @media screen and(min-width: 1200px) {
+    display: none;
+  }
+}
+
 .burger-btn {
   position: relative;
   display: flex;
@@ -129,28 +165,23 @@
   justify-content: center;
   z-index: 30;
   opacity: 1;
-  background-color:transparent;
+  background-color: transparent;
   border: none;
   padding: 0;
 
-
   &.is-open {
-      opacity: 1;
-                  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1) 1s;
-
-  }
-  &.is-hidden {
-            transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1) 1s;
+    opacity: 1;
   }
   @media screen and(min-width: 768px) {
-        top: 0;
-        left: 220px;
+    top: 0;
+    left: 220px;
   }
 
-    @media screen and(min-width: 825px) {
-      left: 240px;
-    }
+  @media screen and(min-width: 825px) {
+    left: 240px;
+  }
   @media screen and(min-width: 970px) {
+    width: 65px;
     left: 255px;
   }
 
@@ -160,11 +191,12 @@
 }
 
 .burger-btn__burger {
-  fill: var(--accent-link-color);
+  fill: transparent;
 }
 .burger-btn__cross {
-  fill: var(--secondary-background-color);
+  fill: transparent;
 }
+
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -197,7 +229,7 @@
   display: flex;
   flex-direction: column;
   transform: translateX(0);
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -215,6 +247,11 @@
   &:hover,
   &:focus {
     fill: var(--accent-link-color);
+  }
+
+  @media screen and(min-width:768px) {
+    top: 34px;
+    left: 28px;
   }
 }
 
@@ -440,44 +477,6 @@
   }
 }
 
-// .modal-form-check-about {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   font-family: var(--main-font);
-//   font-size: 12px;
-//   line-height: 1.17;
-//   letter-spacing: 0.03em;
-//   color: #757575;
-//   margin-top: 10px;
-//   margin-bottom: 30px;
-
-//   @media screen and(min-width: 1200px) {
-//     font-size: 14px;
-//     line-height: 1.71;
-//   }
-
-//   &::before {
-//     display: block;
-//     content: '';
-//     width: 15px;
-//     height: 15px;
-//     border: 2px solid #000000;
-//     border-radius: 2px;
-//     cursor: pointer;
-//     margin-right: 8px;
-//   }
-// }
-
-// .modal-form-term:checked + .modal-form-check-about::before {
-//   background-color: var(--accent-color-primary);
-//   border-color: var(--accent-color-primary);
-//   // background-image: url(../images/icon-check.svg);
-//   background-position: center;
-//   background-origin: border-box;
-//   background-size: contain;
-// }
-
 .modal-form-btn {
   // @extend %button;
   position: relative;
@@ -499,19 +498,16 @@
   }
 }
 
-  .burger-btn .burger-btn__cross {
-    opacity: 0;
-    display: none;
+.burger-btn .burger-btn__cross {
+  opacity: 0;
+  display: none;
+}
 
-  }
+.burger-btn.is-open .burger-btn__cross {
+  display: block;
+  opacity: 1;
+}
 
-  .burger-btn.is-open .burger-btn__cross {
-    display: block;
-    opacity: 1;
-
-  }
-
-  .burger-btn.is-open .burger-btn__burger {
-    display: none;
-
-  }
+.burger-btn.is-open .burger-btn__burger {
+  display: none;
+}
