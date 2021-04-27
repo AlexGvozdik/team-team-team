@@ -341,7 +341,7 @@
 }
 
 .modal-header {
-  overflow: scroll;
+ 
   position: absolute;
   top: 50%;
   left: 50%;
@@ -357,6 +357,9 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   transition: transform 1000ms ease;
+  @media screen and(max-width:1199px) {
+     overflow: scroll;
+  }
 }
 
 .modal-header__close-btn {
