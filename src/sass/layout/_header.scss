@@ -341,6 +341,7 @@
 }
 
 .modal-header {
+  overflow: scroll;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -360,8 +361,8 @@
 
 .modal-header__close-btn {
   position: absolute;
-  top: 20px;
-  right: 18px;
+  top: 4px;
+  right: 4px;
   padding: 0;
   width: 25px;
   height: 25px;
@@ -374,6 +375,11 @@
   &:hover,
   &:focus {
     background-color: rgba(225, 121, 146, 0.9);
+  }
+
+  @media screen and(min-width:370px) {
+    top: 20px;
+    right: 18px;
   }
 }
 .modal-header__close-btn-icon {
