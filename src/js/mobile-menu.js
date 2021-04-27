@@ -1,6 +1,6 @@
 (() => {
-  const menuBtnRef = document.querySelector('[data-menu-button-burger]');1
-  const mobileMenuRef = document.querySelector('[data-menu-burger]');2
+  const menuBtnRef = document.querySelector('[data-menu-button-burger]');
+  const mobileMenuRef = document.querySelector('[data-menu-burger]');
   const menuNavLink = [...document.querySelectorAll('.drop-menu__link ')];
   menuNavLink.forEach(e => {
     e.addEventListener('click', () => {
