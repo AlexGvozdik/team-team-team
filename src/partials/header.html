@@ -48,7 +48,14 @@
 
 
 
-
+<button type="button" class="burger-btn" data-menu-button-burger>
+<svg class="burger-btn__svg" width="20" height="20">
+        <use href="./images/svg-icon/sprite.svg#icon-menu" width="20" height="20" class="burger-btn__burger">
+        </use>
+        <use href="./images/svg-icon/sprite.svg#icon-cancel" width="20" height="20" class="burger-btn__cross">
+        </use>
+      </svg>
+        </button>
 
 
 
@@ -61,14 +68,7 @@
                 <use href="./images/svg-icon/sprite.svg#icon-arrow"></use>
             </svg>
         </button>
-       <button type="button" class="burger-btn" data-menu-button-burger>
-<svg class="burger-btn__svg" width="20" height="20">
-        <use href="./images/svg-icon/sprite.svg#icon-menu" width="20" height="20" class="burger-btn__burger">
-        </use>
-        <use href="./images/svg-icon/sprite.svg#icon-cross" width="14" height="14" class="burger-btn__cross">
-        </use>
-      </svg>
-        </button>
+       
         <div class="header-backdrop is-hidden" header-data-modal>
             <div class="modal-header">
                 <button type="button" class="modal-header__close-btn" header-data-modal-close>
@@ -130,11 +130,11 @@
         </div>
 
         <div class="mobile-menu " data-menu-burger>
-            <button close-action class="mobile-menu__close-btn" data-menu-close-burger>
+            <!-- <button close-action class="mobile-menu__close-btn" data-menu-close-burger>
                 <svg class="close-btn__icon">
                     <use href="./images/svg-icon/sprite.svg#icon-close"></use>
                 </svg>
-            </button>
+            </button> -->
             <button type="button" class="mobile-menu__order-btn button-arrow" header-data-modal-open-two>
                 <span class="order-btn__text">Buy now</span>
                 <svg class="order-btn__icon">
