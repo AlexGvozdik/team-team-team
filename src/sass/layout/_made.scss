@@ -227,7 +227,7 @@
 }
 
 .modal-made {
-  overflow: scroll;
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -245,7 +245,9 @@
   background-repeat: no-repeat;
   background-position: left 50% bottom 0px;
   background-size: 50%;
-
+@media screen and(max-width:1199px) {
+    overflow: scroll;
+}
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
     screen and (min-resolution: 192dpi) and (min-width: 1200px),
     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
